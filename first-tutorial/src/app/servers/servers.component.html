@@ -1,5 +1,4 @@
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let sever of servers"></app-server>
 
 <label>Server Name</label>
 <input
@@ -14,4 +13,7 @@
   >
     Add Server
   </button>
-  <p> {{ serverCreationStatus }} </p>
+  <p  *ngIf="serverCreated; else noServer"> {{ serverCreationStatus }} </p>
+  <ng-template #noServer>
+    <p>No server was created!</p>
+  </ng-template>
