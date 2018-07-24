@@ -6,19 +6,19 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/recipes">Recipes<span class="sr-only"></span></a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/recipes">Recipes</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
       </li>
     </ul>
     <ul class="nav navbar-nav">
       <li class="dropdown" addDropdown>
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Manage</a>
+        <a class="nav-link dropdown-toggle" routerLinkActive="active" data-toggle="dropdown">Manage</a>
         <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" href="#">Save Data</button>
-          <button class="dropdown-item" href="#">Fetch Data</button>
+          <button class="dropdown-item" routerLinkActive="active">Save Data</button>
+          <button class="dropdown-item" routerLinkActive="active">Fetch Data</button>
         </div>
       </li>
     </ul>
