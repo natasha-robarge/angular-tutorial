@@ -51,7 +51,9 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     else
       this.slService.addIngredient(newIngredient);
 
-    if (this.slForm.submitted)
+    if (this.slForm.submitted) {
+      this.editMode = false;
       this.slForm.resetForm();
+    }
   }
 }
