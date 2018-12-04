@@ -1,0 +1,20 @@
+.row {
+  margin: 10px;
+}
+
+#description {
+  width: 350px;
+}
+
+#imagePath {
+  width: 350px;
+}
+
+#name {
+  width: 350px;
+}
+
+#save {
+  margin-right: 10px;
+}
+
