@@ -17,8 +17,8 @@
       <li class="dropdown" addDropdown>
         <a class="nav-link dropdown-toggle" routerLinkActive="active" data-toggle="dropdown">Manage</a>
         <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" routerLinkActive="active">Save Data</button>
-          <button class="dropdown-item" routerLinkActive="active">Fetch Data</button>
+          <button class="dropdown-item" routerLinkActive="active" (click)="onSaveData()">Save Data</button>
+          <button class="dropdown-item" routerLinkActive="active" (click)="onFetchData()">Fetch Data</button>
         </div>
       </li>
     </ul>
